@@ -4,9 +4,7 @@ Bem-vindo ao repositório oficial do canal **Python4Networking** no YouTube!
 
 ## 📺 O que você encontrará aqui?
 
-Scripts e códigos exemplos reais e tutoriais completos para automatizar redes com Python, Ansible, Netmiko, Nornir, Napalm e muito mais!
-
-Este repositório contém scripts e códigos relacionados aos vídeos do canal [Python4Networking](https://youtube.com/@python4networking?si=WkeOojlmN0fie750).
+Scripts e códigos relacionados aos vídeos do canal [Python4Networking](https://youtube.com/@python4networking?si=WkeOojlmN0fie750).
 
 ## 🎯 Para quem é esse conteúdo?
 
@@ -16,7 +14,7 @@ Este repositório contém scripts e códigos relacionados aos vídeos do canal [
 
 ## ⚙️ Como usar esse repositório?
 
-Cada pasta contém códigos e exemplos mostrados nos vídeos, com instruções detalhadas no README.md individual.
+Cada pasta contém códigos e scripts mostrados nos vídeos, com instruções no README.md individual.
 
 Clone esse repositório:
 ```bash
