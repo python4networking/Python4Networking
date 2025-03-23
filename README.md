@@ -12,9 +12,11 @@ Este repositório contém scripts e códigos relacionados aos vídeos do canal [
 
 Cada pasta contém códigos e exemplos mostrados nos vídeos, com instruções detalhadas no README.md individual.
 
-Clone esse repositório para acompanhar os tutoriais:
+Clone esse repositório:
 ```bash
 git clone https://github.com/seu-usuario/Python4Networking.git
+cd Python4Networking
+
 
 
 
