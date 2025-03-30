@@ -1,1 +1,15 @@
+---
 
+R1:
+  hostname: Endereço_IP_Device
+  groups:
+    - cisco
+SW1:
+  hostname: Endereço_IP_Device
+  groups:
+    - arista
+
+R10:
+  hostname: Endereço_IP_Device
+  groups:
+    - juniper
