@@ -1,1 +1,16 @@
+---
 
+cisco:
+  platform: ios
+  username: cisco
+  password: cisco
+
+arista:
+  platform: eos
+  username: admin
+  password: arista
+
+juniper:
+  platform: junos
+  username: junos
+  password: juniper1
