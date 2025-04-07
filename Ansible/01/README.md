@@ -6,8 +6,11 @@ Este diretório contém os arquivos usados no vídeo ["Ansible? O que todo o Pro
 
 ## 📋 O que você vai aprender
 ✅ O que é Ansible e como ele funciona nos bastidores
+
 ✅ A diferença entre linguagem declarativa e imperativa
+
 ✅ Como criar um playbook simples, reutilizável e escalável
+
 ✅ Como automatizar o backup de  configuração dos equipamentos Cisco e Arista com Ansible
 
 ---
