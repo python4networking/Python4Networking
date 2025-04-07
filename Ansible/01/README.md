@@ -28,4 +28,5 @@ Este diretório contém os arquivos usados no vídeo ["Ansible? O que todo o Pro
 ## ▶️ Como executar
 
 1. cd Diretorio (arquivos Ansible)
+   
    ansible-playbook playbook_bkp.yaml
