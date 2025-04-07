@@ -1,0 +1,39 @@
+---
+
+- name: Backup de Configuração usando módulo especifico com timestamp
+  hosts: all
+  gather_facts: false
+  connection: network_cli
+  vars:
+    backup_dir: "./Bkp_Net_Devices"
+    timestamp: "{{ lookup('pipe', 'date +%Y-%m-%d_%H-%M-%S') }}"
+
+  tasks:
+
+    - name: Realizar backup das configurações em Cisco
+      cisco.ios.ios_config:
+        backup: true
+        backup_options:
+          filename: "running_config_{{ timestamp }}.cfg"
+          dir_path: "{{ backup_dir }}/cisco/{{ inventory_hostname }}"
+      register: cisco_output
+      when: ansible_network_os == 'cisco.ios.ios'
+
+    - name: Realizar backup das configurações em Arista
+      arista.eos.eos_config:
+        backup: true
+        backup_options:
+          filename: "running_config_{{ timestamp }}.cfg"
+          dir_path: "{{ backup_dir }}/arista/{{ inventory_hostname }}"
+      register: arista_output
+      when: ansible_network_os == 'arista.eos.eos'
+
+    - name: Exibir mensagem de conclusão Cisco
+      ansible.builtin.debug:
+        msg: "Backup Cisco concluído com sucesso para {{ inventory_hostname }}: {{ cisco_output }}"
+      when: ansible_network_os == 'cisco.ios.ios'
+
+    - name: Exibir mensagem de conclusão Arista
+      ansible.builtin.debug:
+        msg: "Backup Arista concluído com sucesso para {{ inventory_hostname }}: {{ arista_output }}"
+      when: ansible_network_os == 'arista.eos.eos'
