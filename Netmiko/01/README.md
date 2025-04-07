@@ -1,28 +1,30 @@
 # Arquivos e Scripts de videos do CanalYoutube
 
-Este diretório contém os arquivos usados no vídeo ["Ansible? O que todo o Profissional de Redes deveria saber em menos de 20 minutos!"](https://youtu.be/ayWVJpfS9hI?si=lTEl4XhvHGSOj8Pp).
+Este diretório contém os arquivos usados no vídeo [Automação de Redes com Python na prática: Colete dados em Minutos](https://www.youtube.com/watch?v=VAx9g35QQbQ).
 
 ---
 
 ## 📋 O que você vai aprender
-✅ O que é Ansible e como ele funciona nos bastidores
-✅ A diferença entre linguagem declarativa e imperativa
-✅ Como criar um playbook simples, reutilizável e escalável
-✅ Como automatizar o backup de  configuração dos equipamentos Cisco e Arista com Ansible
+
+- Como usar o **Netmiko** para se conectar a dispositivos Cisco e Arista.
+- Como enviar comandos remotamente via SSH.
+- Como coletar informações como **hostname, versão do sistema e número de série**.
+- Como salvar os dados em um **arquivo CSV** automaticamente.
 
 ---
 
 ## 📂 Arquivos incluídos
 
-| Arquivo              | Descrição                                              |
-|----------------------|--------------------------------------------------------|
-| `ansible.cfg`      | Arquivo de configuração de parametros globais do Ansible |
-| `inventory.ini`    | Inventário dos dispositivos de rede                      |
-| `playbook_bkp.yaml`| Playbook para execução de tarefas                        |
+| Arquivo               | Descrição                                      |
+|-----------------------|-----------------------------------------------|
+| `script_netmiko_01.py`| Script principal que conecta aos dispositivos |
 
 ---
 
 ## ▶️ Como executar
 
-1. cd Diretorio (arquivos Ansible)
-   ansible-playbook playbook_bkp.yaml
+1. Crie e ative um ambiente virtual (opcional, mas recomendado):
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   python3 script_netmiko_01.py 
