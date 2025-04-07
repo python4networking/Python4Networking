@@ -20,8 +20,8 @@ Este diretório contém os arquivos usados no vídeo ["Ansible? O que todo o Pro
 | Arquivo              | Descrição                                              |
 |----------------------|--------------------------------------------------------|
 | `ansible.cfg`      | Arquivo de configuração de parametros globais do Ansible |
-| `inventory.ini`    | Inventário dos dispositivos de rede                      |
-| `playbook_bkp.yaml`| Playbook para execução de tarefas                        |
+| `inventory.ini`    | Inventário dos dispositivos de rede do Ansible           |
+| `playbook_bkp.yaml`| Playbook para execução de tarefas para o Ansible         |
 
 ---
 
