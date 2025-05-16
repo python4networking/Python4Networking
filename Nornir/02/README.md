@@ -1,6 +1,6 @@
-# Automatize Switches Cisco com Python + Netmiko + Jinja2
+# Automatize Switches Cisco com Python + Nornir + Netmiko + Jinja2
 
-Este projeto demonstra como automatizar a configuração de múltiplos switches Cisco usando Python, Netmiko e Jinja2, sem frameworks adicionais como o Nornir.
+Este projeto demonstra como automatizar a configuração de múltiplos switches Cisco usando Python, Nornir, Netmiko e Jinja2.
 
 ## Funcionalidades
 
@@ -14,15 +14,29 @@ Este projeto demonstra como automatizar a configuração de múltiplos switches 
 
 ```
 .
-├── main.py
+├── switch_automation.py
 ├── templates/
 │   ├── access_switch.j2
 │   └── core_switch.j2
 ├── host_vars/
-│   ├── sw1.yaml
-│   └── core.yaml
+│   ├── core_switch.yaml
+│   └── sw1.yaml
+│   └── sw2.yaml
+│   └── sw3.yaml
+│   └── sw4.yaml
+│   └── sw5.yaml
+│   └── sw6.yaml
+│   └── sw7.yaml
+│   └── sw8.yaml
+│   └── sw9.yaml
+│   └── sw10.yaml
+├── inventories/
+│   ├── defaults.yaml
+│   └── groups.yaml
+│   └── hosts.yaml
 ├── logs/
 └── requirements.txt
+└── config.yaml
 ```
 
 ## Execução
