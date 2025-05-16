@@ -1,0 +1,5 @@
+nornir
+nornir_utils
+nornir_netmiko
+nornir_jinja2
+pyyaml
