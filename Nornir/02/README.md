@@ -1,6 +1,6 @@
 # Automatize Switches Cisco com Python + Nornir + Netmiko + Jinja2
 
-Este projeto demonstra como automatizar a configuração de múltiplos switches Cisco usando Python, Nornir, Netmiko e Jinja2.
+Este projeto demonstra como automatizar a configuração de múltiplos switches Cisco usando Python + Nornir + Netmiko + Jinja2.
 
 ## Funcionalidades
 
