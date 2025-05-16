@@ -1,14 +1,16 @@
-# Automatize Switches Cisco com Python + Nornir + Netmiko + Jinja2
+# Arquivos e Scripts de videos do CanalYoutube
 
-Este projeto demonstra como automatizar a configuração de múltiplos switches Cisco usando Python + Nornir + Netmiko + Jinja2.
+Este diretório contém os arquivos usados no vídeo ["Configure +10 SWITCHES em Segundos com Python!!!"](https://youtu.be/Kbd_7KYEPYw).
 
-## Funcionalidades
+---
 
-- Carrega dados por host a partir de arquivos YAML
-- Renderiza templates CLI com Jinja2
-- Envia comandos via SSH com Netmiko
-- Coleta comandos de validação
-- Gera logs individuais por dispositivo
+## O que você vai aprender:
+
+- Como usar YAML para dados de switches
+- Gerar comandos (templates) automaticamente com Jinja2
+- Enviar configs via Netmiko (SSH)
+- Coletar show commands automaticamente
+- Gerar logs completos por equipamento
 
 ## Estrutura
 
