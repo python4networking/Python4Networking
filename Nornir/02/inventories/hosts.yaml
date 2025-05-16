@@ -1,0 +1,55 @@
+---
+
+core_switch:
+    hostname: "ENDEREÇO_IP"
+    groups: 
+        - cisco_group
+
+sw1:
+    hostname: "ENDEREÇO_IP"
+    groups: 
+        - cisco_group
+
+sw2:
+    hostname: "ENDEREÇO_IP"
+    groups: 
+        - cisco_group
+
+sw3:
+    hostname: "ENDEREÇO_IP"
+    groups: 
+        - cisco_group
+
+sw4:
+    hostname: "ENDEREÇO_IP"
+    groups:
+        - cisco_group
+
+sw5:
+    hostname: "ENDEREÇO_IP"
+    groups:
+        - cisco_group
+
+sw6:
+    hostname: "ENDEREÇO_IP"
+    groups:
+        - cisco_group
+
+sw7:
+    hostname: "ENDEREÇO_IP"
+    groups:
+        - cisco_group
+sw8:
+    hostname: "ENDEREÇO_IP"
+    groups:
+        - cisco_group
+
+sw9:
+    hostname: "ENDEREÇO_IP"
+    groups:
+        - cisco_group
+
+sw10:
+    hostname: "ENDEREÇO_IP"
+    groups:
+        - cisco_group

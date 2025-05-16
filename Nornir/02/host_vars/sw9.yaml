@@ -1,0 +1,11 @@
+---
+
+hostname: sw9
+platform: cisco_ios
+port_access: Ethernet0/2
+port_trunk: Ethernet0/0
+vlan_id: 90
+vlan_name: 9_Andar
+multilayer: false
+
+

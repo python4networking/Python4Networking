@@ -1,0 +1,14 @@
+---
+
+hostname: sw1
+platform: cisco_ios
+port_access: Ethernet0/2
+port_trunk: Ethernet0/0
+vlan_id: 10
+vlan_name: 1_Andar
+multilayer: false
+username: cisco
+password: cisco
+
+
+

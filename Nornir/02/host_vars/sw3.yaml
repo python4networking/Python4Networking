@@ -1,0 +1,10 @@
+---
+
+hostname: sw3
+platform: cisco_ios
+port_access: Ethernet0/2
+port_trunk: Ethernet0/0
+vlan_id: 30
+vlan_name: 3_Andar
+multilayer: false
+

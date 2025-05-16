@@ -1,0 +1,12 @@
+vlan {{ host.info_switches.vlan_id }}
+ name {{ host.info_switches.vlan_name }}
+
+interface {{ host.info_switches.port_access }}
+ switchport mode access
+ switchport access vlan {{ host.info_switches.vlan_id }}
+ no shutdown
+
+interface {{ host.info_switches.port_trunk }}
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ no shutdown

@@ -1,0 +1,11 @@
+---
+
+hostname: sw7
+platform: cisco_ios
+port_access: Ethernet0/2
+port_trunk: Ethernet0/0
+vlan_id: 70
+vlan_name: 7_Andar
+multilayer: false
+
+

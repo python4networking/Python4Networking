@@ -1,0 +1,10 @@
+---
+
+hostname: sw2
+platform: cisco_ios
+port_access: Ethernet0/2
+port_trunk: Ethernet0/0
+vlan_id: 20
+vlan_name: 2_Andar
+multilayer: false
+

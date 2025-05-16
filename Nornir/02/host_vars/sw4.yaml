@@ -1,0 +1,9 @@
+---
+
+hostname: sw4
+platform: cisco_ios
+port_access: Ethernet0/2
+port_trunk: Ethernet0/0
+vlan_id: 40
+vlan_name: 4_Andar
+multilayer: false

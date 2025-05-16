@@ -1,0 +1,31 @@
+---
+
+hostname: core
+platform: cisco_ios
+vlans:
+    - { id: 10, name: 1_Andar }
+    - { id: 20, name: 2_Andar }
+    - { id: 30, name: 3_Andar }
+    - { id: 40, name: 4_Andar }
+    - { id: 50, name: 5_Andar }
+    - { id: 60, name: 6_Andar }
+    - { id: 70, name: 7_Andar }
+    - { id: 80, name: 8_Andar }
+    - { id: 90, name: 9_Andar }
+    - { id: 100, name: Servidores }
+interfaces_trunk:
+  - Ethernet0/0
+  - Ethernet0/1
+  - Ethernet0/2
+  - Ethernet0/3
+  - Ethernet1/0
+  - Ethernet1/2
+  - Ethernet1/3
+  - Ethernet2/0
+  - Ethernet2/1
+  - Ethernet2/2
+multilayer: true
+
+
+
+
