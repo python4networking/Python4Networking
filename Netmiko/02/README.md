@@ -1,4 +1,4 @@
-# 📘 Vídeo 05 - Variáveis e Strings em Python com Aplicação em Redes
+# 📘 Variáveis e Strings em Python com Aplicação em Redes
 
 Este repositório contém o código-fonte e materiais utilizados no vídeo **"Variáveis e Strings Python com Netmiko: Aprenda na Prática!"** do canal [Python4Networking](https://youtu.be/wGFoWdQY8ZA).
 
