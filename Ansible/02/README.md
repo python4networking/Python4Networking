@@ -1,7 +1,7 @@
 # Episódio 01 – Seu Primeiro Playbook com Ansible
 
 🎥 Série: **Ansible Profissionais de Rede **  
-🔗 Playlist: [(https://www.youtube.com/playlist?list=PLYyNXSDvdcqxlgryctRUwTcJ2A3s3Ta22)]
+🔗 Playlist: (https://www.youtube.com/playlist?list=PLYyNXSDvdcqxlgryctRUwTcJ2A3s3Ta22)
 
 ---
 
@@ -20,6 +20,7 @@ Tudo de forma simples e didática, ideal para quem está **começando com Ansibl
 ```
 02/
 ├── README.md
+├── ansible.cfg
 ├── inventory.ini
 ├── playbook_ep1.yml
 
