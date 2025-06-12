@@ -31,9 +31,9 @@ Execute o playbook:
 ```bash
 ansible-playbook playbook_ep2.yml
 ```
-▶️ [Assista ao Episódio no YouTube](https://youtu.be/AGzdTNNq6tg)
 
-🎥 *Seu Primeiro Playbook Ansible na Rede – Automatize VLANs em Switches com Ansible (Episódio 2)*
+## ▶️ Assista ao Episódio no YouTube
+🎥 [Seu Primeiro Playbook Ansible na Rede – Automatize VLANs em Switches (Episódio 2)](https://youtu.be/AGzdTNNq6tg)
 
 
 🧑‍💻 [Canal Python4Networking]
