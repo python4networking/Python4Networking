@@ -9,7 +9,7 @@ O foco deste episódio é mostrar como automatizar, de forma escalável, a **con
 ---
 
 ## 📁 Estrutura de Diretórios
-
+.
 ├── inventory.ini # Inventário Ansible com switches
 ├── host_vars/ # Variáveis por Switch
 │ ├── sw01.yml
