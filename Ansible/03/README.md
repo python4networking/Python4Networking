@@ -37,14 +37,10 @@ ansible-playbook playbook_ep2.yml
 🧑‍💻 Canal Python4Networking
 Se você é profissional de redes e quer aprender a automatizar sua infraestrutura com Python, Ansible e outras ferramentas modernas, inscreva-se no canal e acompanhe a série completa.
 
-🔗 YouTube: Python4Networking
-
 🛠️ Requisitos
 Python 3.8+
 Ansible 2.15+
 Acesso SSH (CLI) aos switches Cisco
 
-🧑‍💻 Canal Python4Networking
-Se você é profissional de redes e quer aprender a automatizar sua infraestrutura com Python, Ansible e outras ferramentas modernas, inscreva-se no canal e acompanhe a série completa.
 
-🔗 YouTube: Python4Networking
+
