@@ -32,3 +32,21 @@ Execute o playbook:
 
 ansible-playbook playbook_ep2.yml
 
+▶️ Assista ao Episódio no YouTube
+🎥 [Seu Primeiro Playbook Ansible na Rede – Automatize VLANs em Switches com Ansible  (Episodio 2)](https://youtu.be/AGzdTNNq6tg)
+
+
+🧑‍💻 Canal Python4Networking
+Se você é profissional de redes e quer aprender a automatizar sua infraestrutura com Python, Ansible e outras ferramentas modernas, inscreva-se no canal e acompanhe a série completa.
+
+🔗 YouTube: Python4Networking
+
+🛠️ Requisitos
+Python 3.8+
+Ansible 2.15+
+Acesso SSH (CLI) aos switches Cisco
+
+🧑‍💻 Canal Python4Networking
+Se você é profissional de redes e quer aprender a automatizar sua infraestrutura com Python, Ansible e outras ferramentas modernas, inscreva-se no canal e acompanhe a série completa.
+
+🔗 YouTube: Python4Networking
