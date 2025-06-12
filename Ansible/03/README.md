@@ -28,6 +28,7 @@ O foco deste episódio é mostrar como automatizar, de forma escalável, a **con
 Configure o inventário inventory.ini com IPs e credenciais dos switches.
 Ajuste os arquivos host_vars/swXX.yml com a VLAN e interface correspondente.
 Execute o playbook:
+bash
 ansible-playbook playbook_ep2.yml
 
 ▶️ Assista ao Episódio no YouTube
