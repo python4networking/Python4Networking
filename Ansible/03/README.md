@@ -36,7 +36,7 @@ ansible-playbook playbook_ep2.yml
 🎥 *Seu Primeiro Playbook Ansible na Rede – Automatize VLANs em Switches com Ansible (Episódio 2)*
 
 
-🧑‍💻 Canal Python4Networking
+🧑‍💻 [Canal Python4Networking<br>]
 Se você é profissional de redes e quer aprender a automatizar sua infraestrutura com Python, Ansible e outras ferramentas modernas, inscreva-se no canal e acompanhe a série completa.
 
 🛠️ Requisitos
