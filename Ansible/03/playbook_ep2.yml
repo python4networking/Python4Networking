@@ -1,0 +1,12 @@
+# Primeiros Playbooks
+
+- name: Configuração de VLANs em interfaces de switches de acesso
+  hosts: cisco_acesso
+  gather_facts: no
+  connection: network_cli
+
+  tasks:
+    - name: Aplicar configuração de VLANs com template Jinja2
+      cisco.ios.ios_config:
+        backup: true
+        src: templates/config_vlans.j2

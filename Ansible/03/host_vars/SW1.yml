@@ -1,0 +1,8 @@
+---
+
+interface: Ethernet0/2
+descricao: Porta_Acesso_SW1_PCs_1_ANDAR
+modo: access
+vlan: 10
+
+
