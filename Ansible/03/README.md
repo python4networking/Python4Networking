@@ -9,7 +9,7 @@ O foco deste episódio é mostrar como automatizar, de forma escalável, a **con
 ---
 
 ## 📁 Estrutura de Diretórios
-.
+```text
 ├── inventory.ini # Inventário Ansible com switches
 ├── host_vars/ # Variáveis por Switch
 │ ├── sw01.yml
@@ -19,7 +19,7 @@ O foco deste episódio é mostrar como automatizar, de forma escalável, a **con
 │ └── config_vlans.j2 # Template Jinja2 para as interfaces
 ├── playbook_ep2.yml # Playbook principal
 └── README.md # Este arquivo
-
+```
 
 ---
 
@@ -28,8 +28,9 @@ O foco deste episódio é mostrar como automatizar, de forma escalável, a **con
 Configure o inventário inventory.ini com IPs e credenciais dos switches.
 Ajuste os arquivos host_vars/swXX.yml com a VLAN e interface correspondente.
 Execute o playbook:
-bash
+```bash
 ansible-playbook playbook_ep2.yml
+```
 
 ▶️ Assista ao Episódio no YouTube
 🎥 [Seu Primeiro Playbook Ansible na Rede – Automatize VLANs em Switches com Ansible  (Episodio 2)](https://youtu.be/AGzdTNNq6tg)
