@@ -1,6 +1,6 @@
 # Você sabe o que é API? e Como utilizar em Redes
 
-Este repositório contém os materiais utilizados no vídeo "**API PARA REDES – Tudo que você precisa saber!!!**" publicado no canal [Python4Networking](https://https://youtu.be/Jdw8OT9s8Us).
+Este repositório contém os materiais utilizados no vídeo "**O que é API? Entenda de Vez e Automatize sua Rede com Python!**" publicado no canal [Python4Networking](https://https://youtu.be/Jdw8OT9s8Us).
 
 ## 🎯 Objetivo do vídeo
 
