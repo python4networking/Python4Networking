@@ -4,7 +4,7 @@ from rich import print as rprint
 # Localizar Latitude e Longitude em latlong.net 
 LAT = -23.550520
 LON = -46.633308
-API_KEY = "16749e0d1d2ec74c2b6c64b95dd20bdc"
+API_KEY = "SUA_API_KEY"
 
 # URL = f"https://api.openweathermap.org/data/2.5/weather?lat={LAT}&lon={LON}&appid={API_KEY}"
 
