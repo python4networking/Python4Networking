@@ -14,7 +14,7 @@ Este repositório contém o playbook completo desenvolvido nos episódio 3 da s�
 - Uso de template Jinja2: `config_vlans_acesso.j2` e `config_vlans_core.j2` 
 - Criação de VLANs e SVIs (Interface VLAN) no Switch Core
 - Configuração de trunk links para os Switches de Acesso no Switch Core
-- Aplicação das configurações como módulo `cisco.ios.ios_config` com backup
+- Aplicação das configurações com módulo `cisco.ios.ios_config` com backup
 
 ---
 ## 📂 Estrutura do Projeto
