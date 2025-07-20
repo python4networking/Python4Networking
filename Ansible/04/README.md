@@ -1,4 +1,4 @@
-# Automação Completa de Rede com Ansible – Episódios 3 
+# Automação Completa de Rede com Ansible – Episódio 3 
 
 Este repositório contém o playbook completo desenvolvido nos episódio 3 da série **Ansible para Profissionais de Rede**, do canal [Python4Networking](https://www.youtube.com/@Python4Networking).
 
