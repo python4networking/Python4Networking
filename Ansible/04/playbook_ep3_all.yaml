@@ -1,0 +1,55 @@
+---
+
+# Episodio_1
+- name: Primeiro playbook para coleta de informações 
+  hosts: all
+  gather_facts: no
+  connection: network_cli
+
+  tasks:
+    - name: Coletar comando "show version"
+      ansible.netcommon.cli_command:
+        command: show version
+      register: cmd_version
+
+    - name: Coletar o comando "show ip interface brief"
+      ansible.netcommon.cli_command:
+        command: show ip int brief
+      register: cmd_intf
+
+    - name: Exibir versão do IOS
+      debug:
+        var: cmd_version.stdout_lines
+
+    - name: Exibir informações de Interfaces
+      debug:
+        var: cmd_intf.stdout_lines
+#-----------------------------------------------------------------------------#
+# Episodio_2
+- name: Configuração de VLANs em interfaces de switches de acesso (Episodio_2)
+  hosts: cisco_acesso
+  gather_facts: no
+  connection: network_cli
+
+  tasks:
+  - name: Aplicar configuração de VLANs com template Jinja2
+    cisco.ios.ios_config:
+      backup: true
+      src: templates/config_vlans_acesso.j2
+#-----------------------------------------------------------------------------#
+# Episodio_3
+- name: Configurar o Switch Core (Episodio 3)
+  hosts: cisco_core
+  gather_facts: no
+  connection: network_cli
+
+  tasks:
+    - name: Gerar configuração das SVIs e interfaces trunk
+      template:
+        src: templates/config_vlans_core.j2
+        dest: svi_config.txt
+
+    - name: Aplicar configuração no dispositivo
+      cisco.ios.ios_config:
+        backup: true
+        src: svi_config.txt

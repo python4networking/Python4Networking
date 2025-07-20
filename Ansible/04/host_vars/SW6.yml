@@ -1,0 +1,8 @@
+---
+
+interface: Ethernet0/2
+descricao: Porta_Acesso_SW6_PCs_6_ANDAR
+modo: access
+vlan: 60
+
+

@@ -1,0 +1,8 @@
+---
+
+interface: Ethernet0/2
+descricao: Porta_Acesso_SW10_SERVIDOR_10_ANDAR
+modo: access
+vlan: 100
+
+

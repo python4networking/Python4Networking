@@ -1,0 +1,58 @@
+---
+
+vlans:
+  - id: 10
+    name: PCs_1_ANDAR
+    ip: 10.0.10.1
+    mask: 255.255.255.0
+  - id: 20
+    name: PCs_2_ANDAR
+    ip: 10.0.20.1
+    mask: 255.255.255.0
+  - id: 30
+    name: PCs_3_ANDAR
+    ip: 10.0.30.1
+    mask: 255.255.255.0
+  - id: 40
+    name: PCs_4_ANDAR
+    ip: 10.0.40.1
+    mask: 255.255.255.0
+  - id: 50
+    name: PCs_5_ANDAR
+    ip: 10.0.50.1
+    mask: 255.255.255.0
+  - id: 60
+    name: PCs_6_ANDAR
+    ip: 10.0.60.1
+    mask: 255.255.255.0
+  - id: 70
+    name: PCs_7_ANDAR
+    ip: 10.0.70.1
+    mask: 255.255.255.0
+  - id: 80
+    name: PCs_8_ANDAR
+    ip: 10.0.80.1
+    mask: 255.255.255.0
+  - id: 90
+    name: PCs_9_ANDAR
+    ip: 10.0.90.1
+    mask: 255.255.255.0
+  - id: 100
+    name: SERVIDORES
+    ip: 10.0.100.1
+    mask: 255.255.255.0
+ 
+trunk_interfaces:
+  - Ethernet0/0
+  - Ethernet0/1
+  - Ethernet0/2
+  - Ethernet0/3
+  - Ethernet1/0
+  - Ethernet1/2
+  - Ethernet1/3
+  - Ethernet2/0
+  - Ethernet2/1
+  - Ethernet2/2
+  
+ 
+
