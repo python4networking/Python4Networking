@@ -1,0 +1,16 @@
+---
+
+core:
+  num_workers: 10
+
+inventory:
+  plugin: NetBoxInventory2
+  options:
+    nb_url: "https://SEU_NETBOX_URL"
+    nb_token: "SEU_TOKEN_NETBOX"
+    ssl_verify: False
+
+runner:
+  plugin: threaded
+  options:
+    num_workers: 20
