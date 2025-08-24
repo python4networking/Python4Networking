@@ -71,7 +71,7 @@ python main.py
 
 ---
 
-## 📺 Assista ao vídeo completo no canal
+## 📺 Assista vídeo desse conteúdo e outros completo no canal
 
 > Neste vídeo eu explico **o que é o NetBox**, por que ele é tão importante na automação de redes, e como ele se conecta com **Nornir, Napalm e Python** para entregar um fluxo real de automação profissional.
 
