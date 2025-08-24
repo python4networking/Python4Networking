@@ -1,6 +1,6 @@
 # 🚀 Backup Automatizado com NetBox + Python (Nornir + Napalm)
 
-[![YouTube Video](https://img.shields.io/badge/🎥%20Assistir%20no%20YouTube-Python4Networking-red?style=for-the-badge&logo=youtube)](https://youtube.com/@python4networking)
+[![YouTube Video](https://img.shields.io/badge/🎥%20Assistir%20no%20YouTube-Python4Networking-red?style=for-the-badge&logo=youtube)](https://youtube.com/watch?v=OjtyooYy2TU)
 
 Este repositório contém um exemplo prático de como utilizar o **NetBox como inventário dinâmico** com **Python**, usando os frameworks **Nornir** e **Napalm**, para realizar **backup automatizado de configurações de dispositivos Cisco e Arista**.
 
