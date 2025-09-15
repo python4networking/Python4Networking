@@ -1,7 +1,3 @@
 
----
-
-## 📂 Arquivo: `requirements.txt`
-```txt
 netmiko==4.3.0
 rich==13.7.0
