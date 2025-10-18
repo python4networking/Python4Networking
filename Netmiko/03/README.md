@@ -51,7 +51,7 @@ python python_ep2.py
 ---
 
 ## 📺 Vídeo no YouTube
-🔗 Assista ao Episódio 2 no canal Python4Networking: [link do vídeo aqui]  
+🔗 Assista ao Episódio 2 no canal Python4Networking: [(https://youtu.be/-UpIRp69f5c)]  
 
 ---
 
