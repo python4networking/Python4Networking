@@ -1,0 +1,142 @@
+
+---
+# PLAY1 - Popular o Netbox via API
+- name: Netbox - Cadastrando dispositivos no Netbox  
+  connection: local
+  hosts: localhost
+  gather_facts: false
+
+  collections:
+    - netbox.netbox
+
+  vars_files:
+    - vars/play1_data.yml
+  
+  module_defaults:
+    group/netbox.netbox.netbox:
+      netbox_url: "{{ lookup('env', 'NETBOX_URL') }}"
+      netbox_token: "{{ lookup('env', 'NETBOX_TOKEN') }}"
+      validate_certs: false
+  #----------------------------------------------------------#
+  # Sites
+  #----------------------------------------------------------#
+  tasks:
+    - name: Criar sites no Netbox
+      netbox_site:
+        data: "{{ site }}"
+        state: present
+      loop: "{{ site_list }}"
+      loop_control:
+        loop_var: site
+        label: "{{ site.name }}"
+  #----------------------------------------------------------#
+  # Manufacturer
+  #----------------------------------------------------------#
+    - name: Criar manufacturers
+      netbox_manufacturer:
+        data: 
+          name: "{{ manufacturer }}"
+        state: present
+      loop: "{{ manufacturers }}"
+      loop_control:
+        loop_var: manufacturer
+        label: "{{ manufacturer }}"
+  #----------------------------------------------------------#
+  # Device Types
+  #----------------------------------------------------------#
+    - name: Criar device types 
+      netbox_device_type:
+        data:
+          model: "{{ device_type.model }}"
+          manufacturer: "{{ device_type.manufacturer }}"
+          slug: "{{ device_type.slug }}"
+        state: present
+      loop: "{{ device_types }}"
+      loop_control:
+        loop_var: device_type
+        label: "{{ device_type.model }}"
+  #----------------------------------------------------------#
+  # Platforms
+  #----------------------------------------------------------#
+    - name: Criar platforms
+      netbox_platform:
+        data:
+          name: "{{ platform.name }}"
+          slug: "{{ platform.slug }}"
+        state: present
+      loop: "{{ platforms }}"
+      loop_control:
+        loop_var: platform
+        label: "{{ platform.name }}"
+  #----------------------------------------------------------#
+  # Device Types
+  #----------------------------------------------------------#
+    - name: Criar Device Roles
+      netbox_device_role:
+        data:
+          name: "{{ device_role.name }}"
+          slug: "{{ device_role.slug }}"
+        state: present
+      loop: "{{ device_roles }}"
+      loop_control:
+        loop_var: device_role
+        label: "{{ device_role.name }}"
+  #----------------------------------------------------------#
+  # Devices
+  #----------------------------------------------------------#
+    - name: Criar devices 
+      netbox_device:
+        data:
+          name: "{{ device.name }}"
+          device_role: "{{ device.device_role }}"
+          device_type: "{{ device.device_type }}"
+          site: "Matriz"
+        state: present
+      loop: "{{ devices }}"
+      loop_control:
+        loop_var: device
+        label: "{{ device.name }}"
+  #----------------------------------------------------------#
+  # Interfaces
+  #----------------------------------------------------------#
+    - name: Criar interfaces 
+      netbox_device_interface:
+        data:
+          device: "{{ device_interface.device }}"
+          name: "{{ device_interface.name }}"
+          type: "{{ device_interface.type }}"
+        state: present
+      loop: "{{ device_interfaces }}"
+      loop_control:
+        loop_var: device_interface
+        label: "{{ device_interface.device }} - {{ device_interface.name }}"
+  #----------------------------------------------------------#
+  # Criar IP e associar a interface
+  #----------------------------------------------------------#
+    - name: Criar IPs e associar à interface
+      netbox_ip_address:
+        data:
+          address: "{{ device_interface.address }}"      
+          assigned_object:
+            device: "{{ device_interface.device }}"      
+            name: "{{ device_interface.name }}"          
+        state: present
+      loop: "{{ device_interfaces }}"
+      loop_control:
+        loop_var: device_interface
+        label: "{{ device_interface.device }} - {{ device_interface.name }} - {{ device_interface.address }}"
+    
+    - name: Definir primary_ip4 do device
+      netbox_device:
+        data:
+          name: "{{ iface.device }}"
+          primary_ip4: "{{ iface.address }}"
+        state: present
+      loop: >-
+        {{ device_interfaces
+           | selectattr('primary', 'defined')
+           | selectattr('primary', 'equalto', true)
+           | list }}
+      loop_control:
+        loop_var: iface
+        label: "{{ iface.device }} -> {{ iface.address }}"

@@ -1,0 +1,86 @@
+---
+site_list:
+  - name: "Matriz"
+    time_zone: America/Sao_Paulo
+    status: Active
+  - name: "Filial01"
+    time_zone: America/Sao_Paulo
+    status: Active
+
+manufacturers: 
+  - Arista
+  - Cisco
+
+device_types:
+  - model: "Cisco_IOL"
+    manufacturer: "Cisco"
+    slug: "cisco_iol"
+  - model: "vEOS"
+    manufacturer: "Arista"
+    slug: "veos"
+
+device_roles:
+  - name: "Core"
+    slug: "core"
+  - name: "Access"
+    slug: "access"
+
+# slug igual ao da platform
+platforms:
+  - name: "Cisco_IOS"
+    slug: "cisco_ios"
+  - name: "Arista_vEOS"
+    slug: "arista_veos"
+
+devices:
+  - name: "R1"
+    device_role: "Core"
+    device_type: "cisco_iol"
+  - name: "R2"
+    device_role: "Core"
+    device_type: "cisco_iol"
+  - name: "R3"
+    device_role: "Core"
+    device_type: "cisco_iol"
+  - name: "R4"
+    device_role: "Core"
+    device_type: "cisco_iol"
+  - name: "SW1"
+    device_role: "Access"
+    device_type: "vEOS"
+  - name: "SW2"
+    device_role: "Access"
+    device_type: "vEOS"
+
+device_interfaces:
+  - name: "ethernet0/0"
+    device: "R1"
+    type:  "100Base-TX"
+    address: "192.168.2.100/24"
+    primary: true
+  - name: "ethernet0/0"
+    device: "R2"
+    type:  "100Base-TX"
+    address: "192.168.2.101/24"
+    primary: true
+  - name: "ethernet0/0"
+    device: "R3"
+    type:  "100Base-TX"
+    address: "192.168.2.102/24"
+    primary: true
+  - name: "ethernet0/0"
+    device: "R4"
+    type:  "100Base-TX"
+    address: "192.168.2.103/24"
+    primary: true
+  - name: "Management1" 
+    device: "SW1"
+    type:  "100Base-TX"
+    address: "192.168.2.104/24"
+    primary: true
+  - name: "Management1" 
+    device: "SW2"
+    type:  "100Base-TX"
+    address: "192.168.2.105/24"
+    primary: true
+
