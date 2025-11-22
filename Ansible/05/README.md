@@ -29,7 +29,9 @@ Tudo isso via um único playbook — totalmente automatizado.
 📁 Estrutura do Projeto
 
 │── playbook1.yml                 # Playbook principal (PLAY1)
+
 │── ansible.cfg                   # Configuração do Ansible
+
 └── vars/
       └── play1_data.yml          # Dados usados para popular o NetBox automaticamente
 
