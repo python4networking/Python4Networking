@@ -91,6 +91,7 @@
           device_role: "{{ device.device_role }}"
           device_type: "{{ device.device_type }}"
           site: "Matriz"
+          platform: "{{ device.platform }}"
         state: present
       loop: "{{ devices }}"
       loop_control:

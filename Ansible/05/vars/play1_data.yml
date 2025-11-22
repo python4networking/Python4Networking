@@ -1,4 +1,5 @@
 ---
+
 site_list:
   - name: "Matriz"
     time_zone: America/Sao_Paulo
@@ -25,32 +26,38 @@ device_roles:
   - name: "Access"
     slug: "access"
 
-# slug igual ao da platform
+# slug utilizado para o Ansible definir o ansible_network_os
 platforms:
   - name: "Cisco_IOS"
     slug: "cisco_ios"
-  - name: "Arista_vEOS"
-    slug: "arista_veos"
+  - name: "Arista_EOS"
+    slug: "arista_eos"
 
 devices:
   - name: "R1"
     device_role: "Core"
     device_type: "cisco_iol"
+    platform: "cisco_ios"
   - name: "R2"
     device_role: "Core"
     device_type: "cisco_iol"
+    platform: "cisco_ios"
   - name: "R3"
     device_role: "Core"
     device_type: "cisco_iol"
+    platform: "cisco_ios"
   - name: "R4"
     device_role: "Core"
     device_type: "cisco_iol"
+    platform: "cisco_ios"
   - name: "SW1"
     device_role: "Access"
     device_type: "vEOS"
+    platform: "arista_eos"
   - name: "SW2"
     device_role: "Access"
     device_type: "vEOS"
+    platform: "arista_eos"
 
 device_interfaces:
   - name: "ethernet0/0"
