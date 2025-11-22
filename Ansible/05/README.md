@@ -43,27 +43,32 @@ Para garantir que o Ansible e o inventário dinâmico do NetBox funcionem corret
 
 1. Crie o arquivo requirements.txt na raiz do projeto:
 
-ansible-core
+    ansible-core
 
-ansible-pylibssh
+    ansible-pylibssh
 
-pytz
+    pytz
 
 2. Crie o ambiente virtual (venv)
-python3 -m venv .venv
+    python3 -m venv .venv
 
 3. Ative o ambiente virtual
-Linux/macOS:
-source .venv/bin/activate
+    
+    Linux/macOS:
+    
+    source .venv/bin/activate
 
-Windows (PowerShell):
-.\.venv\Scripts\activate
+    Windows (PowerShell):
+    
+    .\.venv\Scripts\activate
 
 4. Instale as dependências
-pip install -r requirements.txt
+    
+    pip install -r requirements.txt
 
 5. Instale a coleção necessária para integração com o NetBox
-ansible-galaxy collection install netbox.netbox
+    
+    ansible-galaxy collection install netbox.netbox
 
 
 Antes de executar, você precisa ter:
@@ -75,16 +80,20 @@ Pode ser bare-metal, VM, Docker(Demonstrado na Parte 1).
 🔹 Token de API ativo
 
 No NetBox:
+
 Admin → Users → Tokens
 
 🔹 Variáveis de ambiente configuradas
+
 export NETBOX_URL="http://SEU_IP:8000"
+
 export NETBOX_TOKEN="SEU_TOKEN"
 
 
 ▶️ Como Executar
 
 1. Execute o playbook
+
 ansible-playbook playbook1.yml
 
 O Ansible irá:
