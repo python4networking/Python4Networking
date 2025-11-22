@@ -33,7 +33,6 @@ Tudo isso via um único playbook — totalmente automatizado.
 │── ansible.cfg                   # Configuração do Ansible
 
 └── vars/
-
       └── play1_data.yml          # Dados usados para popular o NetBox automaticamente
 
 🚀 Requisitos
@@ -136,7 +135,7 @@ APIs REST
    Popular o NetBox automaticamente via API.
 
  - PLAY 2 (próximo vídeo — Parte 3):
- 
+
    Usar o inventário dinâmico do NetBox com Ansible para automatizar a rede real.
 
 
