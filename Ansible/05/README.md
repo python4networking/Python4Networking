@@ -99,17 +99,17 @@ export NETBOX_TOKEN="SEU_TOKEN"
 
 O Ansible irá:
 
-    - Criar sites no NetBox
+    ✅ Criar sites no NetBox
 
-    - Criar fabricantes e device types
+    ✅ Criar fabricantes e device types
 
-    - Cadastrar R1, R2, R3, R4, SW1, SW2
+    ✅ Cadastrar R1, R2, R3, R4, SW1, SW2
 
-    - Criar interfaces automaticamente
+    ✅ Criar interfaces automaticamente
 
-    - Criar IPs e associar às interfaces
+    ✅ Criar IPs e associar às interfaces
 
-    - Definir o primary_ip4
+    ✅ Definir o primary_ip4
 
 Todo o NetBox é preenchido automaticamente.
 
@@ -129,15 +129,15 @@ Isso é improdutivo, cansativo e te impede de crescer na carreira.
 
 Ao dominar automação com:
 
-    - Python
+    ✓ Python
 
-    - Ansible
+    ✓ Ansible
 
-    - NetBox
+    ✓ NetBox
 
-    - APIs REST
+    ✓ APIs REST
 
-…você começa a operar em um nível mais alto, com mais tempo, mais eficiência e mais valor profissional.
+👉…você começa a operar em um nível mais alto, com mais tempo, mais eficiência e mais valor profissional.
 
 É assim que você deixa o operacional pesado para trás e evolui para papéis mais estratégicos.
 
