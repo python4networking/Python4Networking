@@ -50,6 +50,7 @@ Para garantir que o Ansible e o inventário dinâmico do NetBox funcionem corret
     pytz
 
 2. Crie o ambiente virtual (venv)
+
     python3 -m venv .venv
 
 3. Ative o ambiente virtual
@@ -94,47 +95,47 @@ export NETBOX_TOKEN="SEU_TOKEN"
 
 1. Execute o playbook
 
-ansible-playbook playbook1.yml
+    ansible-playbook playbook1.yml
 
 O Ansible irá:
 
-Criar sites no NetBox
+    - Criar sites no NetBox
 
-Criar fabricantes e device types
+    - Criar fabricantes e device types
 
-Cadastrar R1, R2, R3, R4, SW1, SW2
+    - Cadastrar R1, R2, R3, R4, SW1, SW2
 
-Criar interfaces automaticamente
+    - Criar interfaces automaticamente
 
-Criar IPs e associar às interfaces
+    - Criar IPs e associar às interfaces
 
-Definir o primary_ip4
+    - Definir o primary_ip4
 
 Todo o NetBox é preenchido automaticamente.
 
 🧠 Por que isso é importante?
 
-No dia a dia, muitos profissionais ainda mantêm:
+    No dia a dia, muitos profissionais ainda mantêm:
 
-❌ Planilhas manuais
+        ❌ Planilhas manuais
 
-❌ Inventários incompletos
+        ❌ Inventários incompletos
 
-❌ Documentação que nunca acompanha a realidade
+        ❌ Documentação que nunca acompanha a realidade
 
-❌ Cadastro de dispositivos feito “na mão”
+        ❌ Cadastro de dispositivos feito “na mão”
 
 Isso é improdutivo, cansativo e te impede de crescer na carreira.
 
 Ao dominar automação com:
 
-Python
+    - Python
 
-Ansible
+    - Ansible
 
-NetBox
+    - NetBox
 
-APIs REST
+    - APIs REST
 
 …você começa a operar em um nível mais alto, com mais tempo, mais eficiência e mais valor profissional.
 
