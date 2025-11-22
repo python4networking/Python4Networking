@@ -1,4 +1,4 @@
-🧰 Automação de Rede com Ansible + NetBox — Vídeo 11 Parte 2
+🧰 Automação de Redes com Ansible + NetBox — Parte 2
 Popular o NetBox automaticamente via API usando Ansible
 
 Este repositório contém todos os arquivos utilizados no video "Automação de Redes com Ansible + NetBox — Parte 2", onde automatizamos completamente o cadastro de dispositivos dentro do NetBox utilizando Ansible.
