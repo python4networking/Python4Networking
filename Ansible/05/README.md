@@ -11,11 +11,17 @@ O objetivo é mostrar como um engenheiro de redes pode deixar tarefas manuais pa
 Nesta parte, você aprenderá a:
 
 ✔ Integrar o Ansible com o NetBox via API
+
 ✔ Criar sites, fabricantes, device types, plataformas, device roles
+
 ✔ Cadastrar dispositivos (Routers e Switches)
+
 ✔ Criar interfaces de rede automaticamente
+
 ✔ Criar endereços IP e associar a interfaces
+
 ✔ Definir o primary IP de cada device
+
 ✔ Transformar seu NetBox em um verdadeiro Source of Truth
 
 Tudo isso via um único playbook — totalmente automatizado.
