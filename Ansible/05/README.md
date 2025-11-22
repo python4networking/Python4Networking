@@ -33,6 +33,7 @@ Tudo isso via um único playbook — totalmente automatizado.
 │── ansible.cfg                   # Configuração do Ansible
 
 └── vars/
+
       └── play1_data.yml          # Dados usados para popular o NetBox automaticamente
 
 🚀 Requisitos
@@ -103,8 +104,11 @@ Todo o NetBox é preenchido automaticamente.
 No dia a dia, muitos profissionais ainda mantêm:
 
 ❌ Planilhas manuais
+
 ❌ Inventários incompletos
+
 ❌ Documentação que nunca acompanha a realidade
+
 ❌ Cadastro de dispositivos feito “na mão”
 
 Isso é improdutivo, cansativo e te impede de crescer na carreira.
@@ -128,9 +132,11 @@ APIs REST
  - Instalar Netbox com containers Docker Compose no Redhat 9 (Parte 1)
 
  - PLAY 1 (este vídeo):
+
    Popular o NetBox automaticamente via API.
 
  - PLAY 2 (próximo vídeo — Parte 3):
+ 
    Usar o inventário dinâmico do NetBox com Ansible para automatizar a rede real.
 
 
