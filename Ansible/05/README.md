@@ -36,12 +36,17 @@ Tudo isso via um único playbook — totalmente automatizado.
       └── play1_data.yml          # Dados usados para popular o NetBox automaticamente
 
 🚀 Requisitos
+
 📦 Instalação do Ambiente Python e Dependências
+
 Para garantir que o Ansible e o inventário dinâmico do NetBox funcionem corretamente, é recomendado criar um ambiente virtual e instalar todas as bibliotecas necessárias via requirements.txt.
 
 1. Crie o arquivo requirements.txt na raiz do projeto:
+
 ansible-core
+
 ansible-pylibssh
+
 pytz
 
 2. Crie o ambiente virtual (venv)
