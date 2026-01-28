@@ -309,6 +309,7 @@ def bkp_configs():
     print()
     pause()
 
+
 def main():
     os.system('clear')
     while True:
@@ -334,6 +335,7 @@ def main():
             rprint(f"[red]Opção não valida no menu!!![/red]")
             print()
             pause()
+
 
 if __name__ == "__main__":
     main()
