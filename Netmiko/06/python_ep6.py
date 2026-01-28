@@ -9,7 +9,7 @@ Episódio 5: Correções/Refatorar e função configura_dispositivos()
 ## Objetivo (Ep. 6) ##
 - Mostrar como dividir um script real em funções pequenas e reaproveitáveis.
 
-## O que o script precisa fazer hoje (Ep4) ##
+## O que o script precisa fazer hoje (Ep6) ##
 |Funções principais|
     a. Coletar informações (show version / show ip int brief / show ip route)
         a1. Importar Inventário e acessar inventario
